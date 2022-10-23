@@ -1,0 +1,84 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+
+.header-border-line {
+    border-bottom: 1px solid #aaa;
+}
+
+.navbar ul{
+    display:flex ;
+    align-items: center;
+
+}
+.btn-custom{
+    border: 1px solid pink;
+    border-radius: 10px;
+    transition: 0.5 all ease-in-out;
+}
+
+.btn-custom:hover{
+    transform: scale(1.2);
+    box-shadow: 2px 2px 0 #aaa;
+
+}
+.banner-content__title{
+    font-size: 2em;
+    color:rgb(137, 32, 235);
+}
+.new-product-title{
+    font-size: 2em;
+}
+.new-product-item{
+    background-color: rgba(91, 196, 223,0.2);
+    border-radius: 8px;
+    border: 2px solid #fff;
+    position: relative;
+    transition: all 0.5 ease-in-out;
+}
+
+.new-product-item:hover{
+top: -15px;
+opacity: 0.8;
+box-shadow: 2px 2px 5px rgb(236, 160, 160);
+
+}
+.new-product-item__name{
+ font-weight: bold;
+}
+.btn-discount{
+    opacity: 0;
+    visibility: hidden;
+    border: none;
+    background-color: rgb(214, 192, 214);
+    color: rgb(27, 29, 19);
+}
+
+
+.product-discount-item:hover>.btn-discount{
+    position: absolute;
+    visibility: visible;
+    opacity: 1;
+    transition: all 1s ease-in-out;
+    transform: scale(1.5);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px pink;
+}
+
+
+.product-discount-item>.product-discount-item__img>img:hover {
+    top: -15px;
+opacity: 0.8;
+box-shadow: 2px 2px 5px rgb(236, 160, 160);
+
+}
+
+
+
+
